@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>OCR Vocab</title>
+    <link rel="stylesheet" href="css.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
+</head>
+<body>
+        
+    <div class="autoclass">
+        <input id="autoid" type="text" placeholder=""  spellcheck="false" >
+        <div id="currentones"></div> 
+    </div>
+
+
+<div id="texts">
+    <div class="mouse_scroll" onclick="bottom()">
+    <div>
+        <span class="m_scroll_arrows unu"></span>
+        <span class="m_scroll_arrows doi"></span>
+        <span class="m_scroll_arrows trei"></span>
+    </div>
+    </div>
+
+<!-- <div>
+    <div class="panel">
+        <div style="font-size: 25px;position: relative;top: 50%;transform: translateY(-50%);", onclick="spanish_general_open()"> General</div>
+    </div>
+    <div id="spanish_general_contents" style="margin-top:5px;">
+        <div style="padding-left: 20px;">
+            <div id="spanish_general_foundation_header">
+                <div class="panel">
+                    <div class="totheleft " style="font-size: 10px;", onclick="spanish_general_foundation_open()">Foundation</div>
+                    <img class="language" id="generalfoundationlang" src="spanish.png" style="width:35px;height:35px", onclick="spanish_general_foundation_lang()">
+                    <img class="menu" src="menu.svg" style="width:35px;height:35px", onclick="spanish_general_foundation_options()">
+                </div>
+                <div style="width:100%;">
+                    <div class="spanishoptions" id="spanish_general_foundation_optionsid">
+                        <button class="spanishall spanishoptionstyle", onclick="spanish_general_foundation_all()">All</button>
+                        <button class="spanishv spanishoptionstyle", onclick="spanish_general_foundation_v()">Verbs</button>
+                        <button class="spanishn spanishoptionstyle", onclick="spanish_general_foundation_n()">Nouns</button>
+                        <button class="spanishadj spanishoptionstyle", onclick="spanish_general_foundation_adj()">Adjectives</button>
+                        <button class="spanishadv spanishoptionstyle", onclick="spanish_general_foundation_adv()">Adverbs</button>
+                        <button class="spanisho spanishoptionstyle", onclick="spanish_general_foundation_o()">Other</button>
+                    </div>
+                </div>
+            </div>
+        <div id="spanish_general_foundation_wrapper" class="wrapperstyle"></div>
+        </div>
+
+   
+            <div style="padding-left: 20px;">
+                <div id="spanish_general_higher_header">
+                    <div class="panel">
+                        <div class="totheleft" style="font-size: 30px;", onclick="spanish_general_higher_open()">Higher</div>   
+                        <img class="language " id="generalhigherlang" src="spanish.png" style="width:35px;height:35px", onclick="spanish_general_higher_lang()">
+                         <img class="menu" src="menu.svg" style="width:35px;height:35px", onclick="spanish_general_higher_options()">
+                    </div>
+                    <div style="width:100%;">
+                        <div class="spanishoptions" id="spanish_general_higher_optionsid">
+                            <button class="spanishall spanishoptionstyle", onclick="spanish_general_higher_all()">All</button>
+                            <button class="spanishv spanishoptionstyle", onclick="spanish_general_higher_v()">Verbs</button>
+                            <button class="spanishn spanishoptionstyle", onclick="spanish_general_higher_n()">Nouns</button>
+                            <button class="spanishadj spanishoptionstyle", onclick="spanish_general_higher_adj()">Adjectives</button>
+                            <button class="spanishadv spanishoptionstyle", onclick="spanish_general_higher_adv()">Adverbs</button>
+                            <button class="spanisho spanishoptionstyle", onclick="spanish_general_higher_o()">Other</button>
+                        </div>
+                    </div>
+                </div>
+            <div id="spanish_general_higher_wrapper" class="wrapperstyle"></div>
+            </div>
+
+
+
+
+    </div>
+</div> -->
+
+
+
+
+<div>
+    <div class="panel">
+        <div style="font-size: 16px;position: relative;padding: 15px 0px 15px 15px;top: 50%;transform: translateY(-50%);", onclick="edexel_gcse_spanish_hfl_open()">High-frequency language</div>
+    </div>
+    <div id="edexel_gcse_spanish_hfl_contents" style="margin-top:5px;">
+        <div style="padding-left: 20px;">
+            <div id="edexel_gcse_spanish_hfl_commonverbs_header">
+                <div class="panel">
+                    <div class="totheleft " , onclick="edexel_gcse_spanish_hfl_commonverbs_open()">Verbs</div>
+                    <img class="language" id="edexel_gcse_spanish_hfl_commonverbs_lang" src="spanish.png" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonverbs_lang()">
+                    <img class="menu" src="shuffle.svg" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonverbs_shuffle()">
+                </div>
+            </div>
+        <div id="edexel_gcse_spanish_hfl_commonverbs" class="wrapperstyle"></div>
+        </div>
+
+   
+        <div style="padding-left: 20px;">
+            <div id="edexel_gcse_spanish_hfl_commonadjectives_header">
+                <div class="panel">
+                    <div class="totheleft " , onclick="edexel_gcse_spanish_hfl_commonadjectives_open()">Adjectives</div>
+                    <img class="language" id="edexel_gcse_spanish_hfl_commonadjectives_lang" src="spanish.png" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonadjectives_lang()">
+                    <img class="menu" src="shuffle.svg" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonadjectives_shuffle()">
+                </div>
+            </div>
+        <div id="edexel_gcse_spanish_hfl_commonadjectives" class="wrapperstyle"></div>
+        </div>
+
+        <div style="padding-left: 20px;">
+            <div id="edexel_gcse_spanish_hfl_commonadverbs_header">
+                <div class="panel">
+                    <div class="totheleft " , onclick="edexel_gcse_spanish_hfl_commonadverbs_open()">Adverbs</div>
+                    <img class="language" id="edexel_gcse_spanish_hfl_commonadverbs_lang" src="spanish.png" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonadverbs_lang()">
+                    <img class="menu" src="shuffle.svg" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonadverbs_shuffle()">
+                </div>
+            </div>
+        <div id="edexel_gcse_spanish_hfl_commonadverbs" class="wrapperstyle"></div>
+        </div>
+
+        <div style="padding-left: 20px;">
+            <div id="edexel_gcse_spanish_hfl_commonprepositions_header">
+                <div class="panel">
+                    <div class="totheleft " , onclick="edexel_gcse_spanish_hfl_commonprepositions_open()">Prepositions</div>
+                    <img class="language" id="edexel_gcse_spanish_hfl_commonprepositions_lang" src="spanish.png" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonprepositions_lang()">
+                    <img class="menu" src="shuffle.svg" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonprepositions_shuffle()">
+                </div>
+            </div>
+        <div id="edexel_gcse_spanish_hfl_commonprepositions" class="wrapperstyle"></div>
+        </div>
+
+        <div style="padding-left: 20px;">
+            <div id="edexel_gcse_spanish_hfl_commoncolors_header">
+                <div class="panel">
+                    <div class="totheleft " , onclick="edexel_gcse_spanish_hfl_commoncolors_open()">Colors</div>
+                    <img class="language" id="edexel_gcse_spanish_hfl_commoncolors_lang" src="spanish.png" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commoncolors_lang()">
+                    <img class="menu" src="shuffle.svg" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commoncolors_shuffle()">
+                </div>
+            </div>
+        <div id="edexel_gcse_spanish_hfl_commoncolors" class="wrapperstyle"></div>
+        </div>
+
+        <div style="padding-left: 20px;">
+            <div id="edexel_gcse_spanish_hfl_commonnumbers_header">
+                <div class="panel">
+                    <div class="totheleft " , onclick="edexel_gcse_spanish_hfl_commonnumbers_open()">Numbers</div>
+                    <img class="language" id="edexel_gcse_spanish_hfl_commonnumbers_lang" src="spanish.png" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonnumbers_lang()">
+                    <img class="menu" src="shuffle.svg" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonnumbers_shuffle()">
+                </div>
+            </div>
+        <div id="edexel_gcse_spanish_hfl_commonnumbers" class="wrapperstyle"></div>
+        </div>
+
+        <div style="padding-left: 20px;">
+            <div id="edexel_gcse_spanish_hfl_commonordinals_header">
+                <div class="panel">
+                    <div class="totheleft " , onclick="edexel_gcse_spanish_hfl_commonordinals_open()">Ordinals</div>
+                    <img class="language" id="edexel_gcse_spanish_hfl_commonordinals_lang" src="spanish.png" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonordinals_lang()">
+                    <img class="menu" src="shuffle.svg" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonordinals_shuffle()">
+                </div>
+            </div>
+        <div id="edexel_gcse_spanish_hfl_commonordinals" class="wrapperstyle"></div>
+        </div>
+
+        <div style="padding-left: 20px;">
+            <div id="edexel_gcse_spanish_hfl_commonquanmes_header">
+                <div class="panel">
+                    <div class="totheleft " , onclick="edexel_gcse_spanish_hfl_commonquanmes_open()">Quantities and measures</div>
+                    <img class="language" id="edexel_gcse_spanish_hfl_commonquanmes_lang" src="spanish.png" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonquanmes_lang()">
+                    <img class="menu" src="shuffle.svg" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonquanmes_shuffle()">
+                </div>
+            </div>
+        <div id="edexel_gcse_spanish_hfl_commonquanmes" class="wrapperstyle"></div>
+        </div>
+
+        <div style="padding-left: 20px;">
+            <div id="edexel_gcse_spanish_hfl_commonsouscowos_header">
+                <div class="panel">
+                    <div class="totheleft " , onclick="edexel_gcse_spanish_hfl_commonsouscowos_open()">Connecting words</div>
+                    <img class="language" id="edexel_gcse_spanish_hfl_commonsouscowos_lang" src="spanish.png" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonsouscowos_lang()">
+                    <img class="menu" src="shuffle.svg" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonsouscowos_shuffle()">
+                </div>
+            </div>
+        <div id="edexel_gcse_spanish_hfl_commonsouscowos" class="wrapperstyle"></div>
+        </div>
+
+        <div style="padding-left: 20px;">
+            <div id="edexel_gcse_spanish_hfl_commontiexs_header">
+                <div class="panel">
+                    <div class="totheleft " , onclick="edexel_gcse_spanish_hfl_commontiexs_open()">Time expressions</div>
+                    <img class="language" id="edexel_gcse_spanish_hfl_commontiexs_lang" src="spanish.png" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commontiexs_lang()">
+                    <img class="menu" src="shuffle.svg" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commontiexs_shuffle()">
+                </div>
+            </div>
+        <div id="edexel_gcse_spanish_hfl_commontiexs" class="wrapperstyle"></div>
+        </div>
+
+        <div style="padding-left: 20px;">
+            <div id="edexel_gcse_spanish_hfl_commontiofdas_header">
+                <div class="panel">
+                    <div class="totheleft " , onclick="edexel_gcse_spanish_hfl_commontiofdas_open()">Times of day</div>
+                    <img class="language" id="edexel_gcse_spanish_hfl_commontiofdas_lang" src="spanish.png" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commontiofdas_lang()">
+                    <img class="menu" src="shuffle.svg" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commontiofdas_shuffle()">
+                </div>
+            </div>
+        <div id="edexel_gcse_spanish_hfl_commontiofdas" class="wrapperstyle"></div>
+        </div>
+
+        <div style="padding-left: 20px;">
+            <div id="edexel_gcse_spanish_hfl_commondaofthwes_header">
+                <div class="panel">
+                    <div class="totheleft " , onclick="edexel_gcse_spanish_hfl_commondaofthwes_open()">Days of the week</div>
+                    <img class="language" id="edexel_gcse_spanish_hfl_commondaofthwes_lang" src="spanish.png" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commondaofthwes_lang()">
+                    <img class="menu" src="shuffle.svg" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commondaofthwes_shuffle()">
+                </div>
+            </div>
+        <div id="edexel_gcse_spanish_hfl_commondaofthwes" class="wrapperstyle"></div>
+        </div>
+
+        <div style="padding-left: 20px;">
+            <div id="edexel_gcse_spanish_hfl_commonmoanseofthyes_header">
+                <div class="panel">
+                    <div class="totheleft " , onclick="edexel_gcse_spanish_hfl_commonmoanseofthyes_open()">Months and seasons</div>
+                    <img class="language" id="edexel_gcse_spanish_hfl_commonmoanseofthyes_lang" src="spanish.png" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonmoanseofthyes_lang()">
+                    <img class="menu" src="shuffle.svg" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonmoanseofthyes_shuffle()">
+                </div>
+            </div>
+        <div id="edexel_gcse_spanish_hfl_commonmoanseofthyes" class="wrapperstyle"></div>
+        </div>
+
+        <div style="padding-left: 20px;">
+            <div id="edexel_gcse_spanish_hfl_commonquwos_header">
+                <div class="panel">
+                    <div class="totheleft " , onclick="edexel_gcse_spanish_hfl_commonquwos_open()">Question words</div>
+                    <img class="language" id="edexel_gcse_spanish_hfl_commonquwos_lang" src="spanish.png" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonquwos_lang()">
+                    <img class="menu" src="shuffle.svg" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonquwos_shuffle()">
+                </div>
+            </div>
+        <div id="edexel_gcse_spanish_hfl_commonquwos" class="wrapperstyle"></div>
+        </div>
+
+        <div style="padding-left: 20px;">
+            <div id="edexel_gcse_spanish_hfl_commonotusexs_header">
+                <div class="panel">
+                    <div class="totheleft " , onclick="edexel_gcse_spanish_hfl_commonotusexs_open()">Other expressions</div>
+                    <img class="language" id="edexel_gcse_spanish_hfl_commonotusexs_lang" src="spanish.png" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonotusexs_lang()">
+                    <img class="menu" src="shuffle.svg" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonotusexs_shuffle()">
+                </div>
+            </div>
+        <div id="edexel_gcse_spanish_hfl_commonotusexs" class="wrapperstyle"></div>
+        </div>
+
+        <div style="padding-left: 20px;">
+            <div id="edexel_gcse_spanish_hfl_commonothifrwos_header">
+                <div class="panel">
+                    <div class="totheleft " , onclick="edexel_gcse_spanish_hfl_commonothifrwos_open()">Other high-frequency words</div>
+                    <img class="language" id="edexel_gcse_spanish_hfl_commonothifrwos_lang" src="spanish.png" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonothifrwos_lang()">
+                    <img class="menu" src="shuffle.svg" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonothifrwos_shuffle()">
+                </div>
+            </div>
+        <div id="edexel_gcse_spanish_hfl_commonothifrwos" class="wrapperstyle"></div>
+        </div>
+
+        <div style="padding-left: 20px;">
+            <div id="edexel_gcse_spanish_hfl_commoncountriess_header">
+                <div class="panel">
+                    <div class="totheleft " , onclick="edexel_gcse_spanish_hfl_commoncountriess_open()">Countries</div>
+                    <img class="language" id="edexel_gcse_spanish_hfl_commoncountriess_lang" src="spanish.png" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commoncountriess_lang()">
+                    <img class="menu" src="shuffle.svg" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commoncountriess_shuffle()">
+                </div>
+            </div>
+        <div id="edexel_gcse_spanish_hfl_commoncountriess" class="wrapperstyle"></div>
+        </div>
+
+        <div style="padding-left: 20px;">
+            <div id="edexel_gcse_spanish_hfl_commoncontinentss_header">
+                <div class="panel">
+                    <div class="totheleft " , onclick="edexel_gcse_spanish_hfl_commoncontinentss_open()">Continents</div>
+                    <img class="language" id="edexel_gcse_spanish_hfl_commoncontinentss_lang" src="spanish.png" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commoncontinentss_lang()">
+                    <img class="menu" src="shuffle.svg" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commoncontinentss_shuffle()">
+                </div>
+            </div>
+        <div id="edexel_gcse_spanish_hfl_commoncontinentss" class="wrapperstyle"></div>
+        </div>
+
+        <div style="padding-left: 20px;">
+            <div id="edexel_gcse_spanish_hfl_commonnationalitiess_header">
+                <div class="panel">
+                    <div class="totheleft " , onclick="edexel_gcse_spanish_hfl_commonnationalitiess_open()">Nationalities</div>
+                    <img class="language" id="edexel_gcse_spanish_hfl_commonnationalitiess_lang" src="spanish.png" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonnationalitiess_lang()">
+                    <img class="menu" src="shuffle.svg" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonnationalitiess_shuffle()">
+                </div>
+            </div>
+        <div id="edexel_gcse_spanish_hfl_commonnationalitiess" class="wrapperstyle"></div>
+        </div>
+
+        <div style="padding-left: 20px;">
+            <div id="edexel_gcse_spanish_hfl_commonarmoses_header">
+                <div class="panel">
+                    <div class="totheleft " , onclick="edexel_gcse_spanish_hfl_commonarmoses_open()">Areas/mountains/seas</div>
+                    <img class="language" id="edexel_gcse_spanish_hfl_commonarmoses_lang" src="spanish.png" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonarmoses_lang()">
+                    <img class="menu" src="shuffle.svg" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonarmoses_shuffle()">
+                </div>
+            </div>
+        <div id="edexel_gcse_spanish_hfl_commonarmoses" class="wrapperstyle"></div>
+        </div>
+
+        <div style="padding-left: 20px;">
+            <div id="edexel_gcse_spanish_hfl_commonusacros_header">
+                <div class="panel">
+                    <div class="totheleft " , onclick="edexel_gcse_spanish_hfl_commonusacros_open()">Useful acronyms</div>
+                    <img class="language" id="edexel_gcse_spanish_hfl_commonusacros_lang" src="spanish.png" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonusacros_lang()">
+                    <img class="menu" src="shuffle.svg" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonusacros_shuffle()">
+                </div>
+            </div>
+        <div id="edexel_gcse_spanish_hfl_commonusacros" class="wrapperstyle"></div>
+        </div>
+
+        <div style="padding-left: 20px;">
+            <div id="edexel_gcse_spanish_hfl_commonsocialconvens_header">
+                <div class="panel">
+                    <div class="totheleft " , onclick="edexel_gcse_spanish_hfl_commonsocialconvens_open()">Social conventions</div>
+                    <img class="language" id="edexel_gcse_spanish_hfl_commonsocialconvens_lang" src="spanish.png" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonsocialconvens_lang()">
+                    <img class="menu" src="shuffle.svg" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonsocialconvens_shuffle()">
+                </div>
+            </div>
+        <div id="edexel_gcse_spanish_hfl_commonsocialconvens" class="wrapperstyle"></div>
+        </div>
+
+        <div style="padding-left: 20px;">
+            <div id="edexel_gcse_spanish_hfl_commonlausindianmess_header">
+                <div class="panel">
+                    <div class="totheleft " , onclick="edexel_gcse_spanish_hfl_commonlausindianmess_open()">Dialogues and messages</div>
+                    <img class="language" id="edexel_gcse_spanish_hfl_commonlausindianmess_lang" src="spanish.png" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonlausindianmess_lang()">
+                    <img class="menu" src="shuffle.svg" style="width:35px;height:35px", onclick="edexel_gcse_spanish_hfl_commonlausindianmess_shuffle()">
+                </div>
+            </div>
+        <div id="edexel_gcse_spanish_hfl_commonlausindianmess" class="wrapperstyle"></div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+    
+</body>
+<script src="app.js"></script>
+</html>
+
